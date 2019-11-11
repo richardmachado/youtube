@@ -1,0 +1,14 @@
+
+ul{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    width: 50%;
+}
+
+.list-unstyled {
+    width: 3rem;
+
+
+}
