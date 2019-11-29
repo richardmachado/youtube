@@ -5,7 +5,7 @@ import './App.css';
 // import Youtube from './Youtube';
 import Navbar from "./NavBar/NavBar";
 import SideBar from "./NavBar/SideBar";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
           
         </div>
       
-         <Footer /> 
+         {/* <Footer />  */}
       </div>
     );
   }

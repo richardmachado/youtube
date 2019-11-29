@@ -21,7 +21,8 @@ import {
     DropdownItem } from 'reactstrap';
 
 
-import Youtube from '../Youtube/Youtube';
+import Youtube from '../Youtube/Youtube2';
+import Home from '../Home';
 
 
 
@@ -82,14 +83,7 @@ import Youtube from '../Youtube/Youtube';
 
 
     );  
-    function Home() {
-      return (
-        <div>
-          <h2>This is the home page</h2>
-          <h3>The Youtube link is working </h3>
-        </div>
-      );
-    }
+ 
 
 
 
