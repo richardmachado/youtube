@@ -10,7 +10,7 @@ const channelID = 'UCzS3-65Y91JhOxFiM7j6grg'
 const result = 5;
 
 const finalURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${result}`
-console.log (finalURL)
+
 
 function Youtube() {
   const [posts, setPosts] = useState()
@@ -20,6 +20,7 @@ function Youtube() {
      .get(finalURL)
     .then(response => {
       setPosts(response.data.items)
+      
     })
     .catch (err => {
       console.log(err)
@@ -33,11 +34,13 @@ function Youtube() {
     <div className="App">
       <h1> Youtube Videos</h1>
       <div className = "videosBox">
+        
       {posts.map(post => 
-  
+        <div>
         <iframe className="youtube-video" title="youtube" width="560" height="315" 
-        frameBorder="10" allowFullScreen src={`http://youtube.com/embed/${post.id.videoId}`}/>
-      
+        frameBorder="10" allowFullScreen src={`https://youtube.com/embed/${post.id.videoId}`}/>
+        <p classname ="youtube-desc">{post.snippet.description}</p>
+        </div>
       )}
        
    </div>
