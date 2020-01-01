@@ -21,8 +21,10 @@ import {
     DropdownItem } from 'reactstrap';
 
 
-import Youtube from '../Youtube/Youtube2';
+// import Youtube from '../Youtube/Youtube';
 import Home from '../Home';
+// import LocalWeather from "../LocalWeather/LocalWeather"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -40,13 +42,17 @@ import Home from '../Home';
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
             <NavItem>
-                <Link  activeOnlyWhenExact={true} to ="/" activeClassName="selectedLink">Home</Link>
+                <NavLink tag={Link} to ="/" >Home</NavLink>
               </NavItem>
          
-              <NavItem>
-                <Link to="/youtube/"  >Youtube</Link>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
+              {/* <NavItem>
+                <NavLink tag={Link} to="/youtube/"  >Youtube</NavLink>
+              </NavItem> */}
+              {/* <NavItem>
+                <NavLink tag={Link} to="/localweather/"  >localweather</NavLink>
+              </NavItem> */}
+              
+              {/* <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   More
                 </DropdownToggle>
@@ -55,14 +61,14 @@ import Home from '../Home';
                     <NavLink href="#" target ="_blank">Nothing</NavLink>
                   </DropdownItem>
                   <DropdownItem>
-                    Test 2
+                    Nothing
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    Reset
+                    Nothing
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
             </Nav>
           </Collapse>
         </Navbar>
@@ -71,9 +77,12 @@ import Home from '../Home';
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/youtube">
+          {/* <Route path="/youtube">
             <Youtube />
-            </Route>
+            </Route> */}
+            {/* <Route path="/localweather">
+            <LocalWeather />
+            </Route> */}
         </Switch>
        
       </div>

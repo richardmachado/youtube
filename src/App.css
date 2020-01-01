@@ -1,5 +1,9 @@
+* {
+  background-color: black;
+}
 .App {
   text-align: center;
+  background-color: black;
  
 }
 
@@ -27,7 +31,7 @@
 
 
 body{
-  background-color:grey;
+  background-color:black;
 }
 
 .youtube-video {
@@ -56,7 +60,9 @@ button {
 
   /* Give app full page to work with */
   height: 100vh;
+  background-color: black;
 }
+
 
 #page-wrap {
   text-align: center;

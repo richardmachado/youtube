@@ -4,7 +4,7 @@ import './App.css';
 
 // import Youtube from './Youtube';
 import Navbar from "./NavBar/NavBar";
-import SideBar from "./NavBar/SideBar";
+
 // import Footer from "./Footer";
 
 
@@ -13,7 +13,7 @@ class App extends Component {
     return (
      
       <div className="App">
-         <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+         {/* <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} /> */}
         <div className="App-header">
          
         <Navbar />  
