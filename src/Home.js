@@ -10,7 +10,7 @@ export default function Home () {
          <div class="pyro">
   <div class="before"></div>
   <div class="after"></div>
-  <h1>Happy 2020!!</h1>
+  <h1>Happy 2020!! from the Machado family</h1>
 </div>
            
           </div>
