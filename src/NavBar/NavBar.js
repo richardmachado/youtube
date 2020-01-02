@@ -21,7 +21,7 @@ import {
     DropdownItem } from 'reactstrap';
 
 
-// import Youtube from '../Youtube/Youtube';
+import Youtube from '../Youtube/Youtube2';
 import Home from '../Home';
 // import LocalWeather from "../LocalWeather/LocalWeather"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -45,9 +45,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                 <NavLink tag={Link} to ="/" >Home</NavLink>
               </NavItem>
          
-              {/* <NavItem>
+              <NavItem>
                 <NavLink tag={Link} to="/youtube/"  >Youtube</NavLink>
-              </NavItem> */}
+              </NavItem>
               {/* <NavItem>
                 <NavLink tag={Link} to="/localweather/"  >localweather</NavLink>
               </NavItem> */}
@@ -77,9 +77,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
           <Route exact path="/">
             <Home />
           </Route>
-          {/* <Route path="/youtube">
+          
+          <Route path="/youtube">
             <Youtube />
-            </Route> */}
+            </Route>
+
             {/* <Route path="/localweather">
             <LocalWeather />
             </Route> */}
