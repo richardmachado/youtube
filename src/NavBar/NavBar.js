@@ -23,7 +23,7 @@ import {
 
 import Youtube from '../Youtube/Youtube2';
 import Home from '../Home';
-// import LocalWeather from "../LocalWeather/LocalWeather"
+import YouTubeSearch from "../Youtube/YouTubeSearch"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -48,11 +48,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
               <NavItem>
                 <NavLink tag={Link} to="/youtube/"  >Youtube</NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink tag={Link} to="/localweather/"  >localweather</NavLink>
-              </NavItem> */}
+              <NavItem>
+                <NavLink tag={Link} to="/youtubesearch/"  >YouTube Search</NavLink>
+              </NavItem> 
               
-              {/* <UncontrolledDropdown nav inNavbar>
+               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   More
                 </DropdownToggle>
@@ -68,7 +68,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                     Nothing
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown> */}
+              </UncontrolledDropdown>
             </Nav>
           </Collapse>
         </Navbar>
@@ -82,9 +82,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
             <Youtube />
             </Route>
 
-            {/* <Route path="/localweather">
-            <LocalWeather />
-            </Route> */}
+            <Route path="/youtubesearch">
+            <YouTubeSearch />
+            </Route> 
         </Switch>
        
       </div>
