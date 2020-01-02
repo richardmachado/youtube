@@ -6,7 +6,7 @@ import '../App.css';
 
 
 const API_KEY = process.env.REACT_APP_API_KEY;
-console.log (API_KEY)
+
 
 
 
@@ -34,7 +34,7 @@ function Youtube() {
      .get(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${channel}&part=snippet,id&order=date&maxResults=${result}`)
     .then(response => {
       setPosts(response.data.items)
-      console.log (response)
+      // console.log (response)
       
     })
     .catch (err => {
