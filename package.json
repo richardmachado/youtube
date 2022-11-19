@@ -10,7 +10,7 @@
     "react-burger-menu": "^2.6.11",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "5.0.1",
     "react-transition-group": "^4.3.0",
     "reactstrap": "^8.1.1",
     "youtube-api-search": "^0.0.5"
